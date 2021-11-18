@@ -1,0 +1,60 @@
+﻿The package provides a Red Black Tree data structure.
+
+
+A standard binary search tree (BST) performs insertion, deletion, and lookup with an expected O(log n) but with worst case O(n). 
+A Red Black BST uses a colour based rebalancing system to ensure that the worst case scenario is also O(log n).
+The structure is implemented as a class RedBlackTree with subsequent class methods for user interaction
+
+
+insert(x)
+Adds the element x to the tree. If the element already exists in the tree, nothing happens.
+
+
+max()
+Returns the maximum element in the tree.
+
+
+min()
+Returns the minimal element in the tree.
+
+
+root()
+Returns the root element of the tree.
+
+
+search(x)
+Looks up an element in the tree, returns True or False depending on if it is found or not.
+
+
+string()
+Returns a string of all elements in the tree in sorted order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+On top of the usual properties of a binary search trees, a red black tree has five additional invariant constraints to improve its worst case time:
+1. Every node is either red or black
+2. The root node is always black
+3. Every leaf node is black
+4. If a node is red, its children are black
+5. Every path from a root node to a leaf has the same number of black nodes.
